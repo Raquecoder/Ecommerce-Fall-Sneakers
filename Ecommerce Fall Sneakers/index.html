@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Fall Sneakers</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <img src="images/logo.svg" class="logo"  alt="logo"/>
+        <button aria-label="close navigation" class="close-nav">&times; </button>
+        <ul >
+            <li><a href="#">Colections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>   
+        </ul>
+          
+    </nav>
+    <img src="images/icon-cart.svg" class="shopping-cart" alt="shopping cart">
+    <img src="images/image-avatar.png"  class="avatar"  alt="avatar picture">
+    <button aria-label="open navigation" class="open-nav">&#9776; </button>
+  </header>
+
+
+  <main >
+    <div class="container-one">
+      <img src="images/image-product-1.jpg" class="main-product" alt="main product"/>
+    </div>
+    <div class="container-two">
+      <h4>SNEAKER COMPANY</h4>
+      <h1>Fall Limite  Edition<br>
+      Sneakers</h1>
+      <p class="main-paragraph">These low-profile sneakers are your perfect casual wear
+        companion.Featuring a durable rubber oter sole they will 
+       <br> Lorem ipsum dolor. Quaerat, laudantium.
+      </p>
+      <div class="prices">
+      <p class="price"> $125.00</p>
+      <p class="linethrought"> $250</p>
+      <p class="price-discount"> 50%</p>
+     </div> 
+    </div>
+     <div class="shopping-cart-section">
+        <button class="increment" id="increment" aria-label="increment button"> + </button>
+        <span class="quantity" id="quantity" > 0 </span>
+        <button class="decrement" id="decrement" aria-label="decrement button" disabled > - </button>
+        <button class="add-cart" id="add-cart" aria-label="add cart button" disabled>Add Cart</button>
+       
+     </div>
+     <div  class="mensaje-container">
+      <span class="mensaje" id="mensaje" disabled>
+      <button class="close-btn" id="close-btn">&times</button></span>
+    </div>
+    
+  </main>
+ <script src="index.js"></script>   
+</body>
+</html>

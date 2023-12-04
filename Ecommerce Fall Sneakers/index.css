@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:lightgrey;
+    margin:0;
+    
+}
+
+/* Navigation*/
+header{
+    display:flex;
+    flex-direction: row;
+    height:50px;
+    width:100%;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+}
+
+ nav{
+ align-items: center;
+
+ margin:10px  700px 0 10px ;
+ 
+ }
+ img{
+   max-width:50%;
+ }
+ .close-nav{
+  display:none;
+ }
+ .open-nav{
+   display:none;
+ }
+ .avatar{
+    max-width:10%;
+   max-height: 40px;
+    
+ }
+ .shopping-cart{
+    max-width: 20px;
+    height: 20px;
+    margin:10px;
+    
+ }
+ ul,li ,a {
+    display:inline;
+    list-style-type: none;
+ }
+
+ /* main section*/
+main{
+    display:flex;
+   
+    width: 90%;
+    
+ }
+ .container-one{
+  display:flex;
+  flex-direction: row;
+  width:50%;
+ 
+ }
+ .main-product{
+    max-width:80%;
+    border-radius:4%;
+    margin: 50px;
+ }
+ 
+ .container-two{
+    text-align: left;
+    width:50%;
+    
+ }
+ h1{
+    color:black;
+ }
+ h4{
+    color:orangered;
+ }
+ .main-paragraph{
+    line-height: 1.5rem;
+  
+ }
+ .linethrought{
+    text-decoration: line-through;
+ }
+ .price{
+    color:black;
+    font-weight: bold;
+ }
+ .price-discount{
+    color:orangered;
+ }
+ 
+.prices{
+   display:flex;
+   gap:10px;
+}
+ .shopping-cart-section{
+  display: flex;
+
+  margin:auto;
+  align-items: center;
+  padding-top: 0px;
+  
+ }
+ button{
+    padding:5px 15px;
+    background-color: white;
+    border:none;
+    color:orangered;
+    font-weight: bolder;
+    font-size: 1.20rem;
+    border-radius:2px ;
+
+ }
+
+ button:hover,
+ button:focus{
+   background-color: brown;
+ }
+ .quantity{
+   color:gray;
+   font-size: 1.25rem;
+ }
+ .add-cart{
+    padding:15px 75px;
+    background-color: orangered;
+    border:none;
+    border-radius: 2px;
+    color:white;
+ }
+
+ .mensaje{
+   display:none;
+   color:black;
+   height:250px;
+   width:30%;
+   background-color:rgba(252, 252, 252, 0.918);
+   padding:2%;
+   position: absolute;
+   top:0;
+   right:0;
+   bottom:0;
+   left:0;
+   margin:auto;
+   box-shadow: 10px 5px 10px orangered;
+   
+ }
+ .close-btn{
+   color:black;
+   font-size: 3px;
+   
+ }
+ 
+ @media(max-width: 810px){
+   body{
+      height: 100vh;
+      padding-bottom:10px;
+   }
+   main{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+     
+      width:100%;
+   }
+   .prices{
+      display:flex;
+      gap:5px;
+   }
+   .add-cart{
+      padding:3px 20px;
+   }
+   .shopping-cart-section{
+      display:flex;
+      flex-direction: row;
+      
+   }
+
+   nav{
+      padding:0.50em;
+   }
+   
+ }
